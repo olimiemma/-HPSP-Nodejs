@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MoodRater
 
-## Getting Started
+MoodRater is a web application built with Next.js and React that allows users to assess their mood and receive personalized encouragement and activity suggestions based on their current emotional state.
 
-First, run the development server:
+## Features
 
-```bash
+- User-friendly interface for mood assessment
+- Personalized mood messages based on user input
+- Activity suggestions tailored to the user's mood
+- Responsive design using Tailwind CSS
+
+## Technologies Used
+
+- Next.js
+- React
+- Tailwind CSS
+- Radix UI Primitives
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your local machine:
+
+- Node.js (v14.0.0 or later)
+- npm (v6.0.0 or later)
+
+## Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/mood-rater.git
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd mood-rater
+   ```
+
+3. Install the dependencies:
+   ```
+   npm install
+   ```
+
+## Usage
+
+To run the development server:
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+mood-rater/
+├── app/
+│   ├── layout.js
+│   ├── page.js
+│   └── globals.css
+├── components/
+│   ├── MoodRater.js
+│   └── ui/
+│       ├── card.js
+│       ├── label.js
+│       ├── input.js
+│       ├── slider.js
+│       └── button.js
+├── public/
+├── tailwind.config.js
+├── next.config.js
+├── package.json
+└── README.md
+```
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+You can customize the mood messages and activity suggestions by modifying the `getMoodMessage` and `getActivitySuggestions` functions in the `components/MoodRater.js` file.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is open source and available under the [MIT License](LICENSE).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Acknowledgements
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Radix UI](https://www.radix-ui.com/)
+
+## Contact
+
+If you have any questions, feel free to reach out to https://www.linkedin.com/in/olimiemma/
